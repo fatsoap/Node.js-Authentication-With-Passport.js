@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <%- include('header') %>
+        <div class="card">
+            <img 
+                src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwzN3x8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
+                class="card-img-top" alt="card img">
+            <div class="card-body"> 
+                <h4 class="text-center mt-2" ><%= form.page %> Page Here</h4>
+                <form action="<%- form.action %>" method="<%- form.method %>" >
+                    <% if(flash) { %>
+                        <div class="alert alert-primary" role="alert" ><%= flash %></div>
+                    <% } %>
+                    <div class="form-label"> Username</div>
+                    <input type="text" class="form-control" name="username" placeholder="username" />
+                    <div class="form-label">Password</div>
+                    <input type="password" class="form-control" name="password" placeholder="password" />
+                    <div class="form-label">Role</div>
+                    <input type="text" class="form-control" name="role" placeholder="role" /> <br />
+                    <button type="submit" class="btn btn-success">Press Me</button>
+
+
+                    <a href="/<%= form.btn %>" class="btn btn-secondary" ><%= form.btn %><a> 
+                    <a href="/" class="btn btn-secondary" >Home<a> 
+                </form>
+            </div>
+        </div>
+    </body>
+</html> 

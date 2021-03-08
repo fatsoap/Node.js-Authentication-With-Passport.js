@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <%- include('header'); %>
+        <% if(flash===[]) { %>
+            <div><%= flash %></div>
+        <% } %>
+        <% if(user) { %>
+            <div class="card" >
+                <img 
+                    src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2dyYW1taW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    class="card-img-top" alt="card img">
+                <div class="card-body">
+                    <h3 class="form-label text-center">User Page</h3>
+                    <h5 class="form-label">Username : </h5>
+                    <div class="form-control mb-2"><%= user.username %></div>
+                    <h5 class="form-label">Hash Password : </h5>
+                    <div class="form-control mb-2"><%= user.password %></div>
+                    <h5 class="form-label">Role : </h5>
+                    <div class="form-control mb-2"><%= user.role %></div>
+                    <div class="form-label">ID : </div>
+                    <h5 class="form-control mb-4"><%= user._id %></h5>
+                    <a href="./logout" class="btn btn-primary d-flex justify-content-center" >logout<a> 
+                </div>
+            </div>    
+        <% } else { %>
+            <div class="card" >
+                <img 
+                    src="https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZ3JhbW1pbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    class="card-img-top" alt="card img">
+                <div class="card-body">
+                    <h5 class="card-title">Home Page Here</h5>
+                    <p class="card-text">choose login or register</p>
+                    <a href="./login" class="btn btn-primary" >login</a>
+                    <a href="./register" class="btn btn-primary" >register<a> 
+                </div>
+            </div>
+        <% } %>
+    </body>
+</html>

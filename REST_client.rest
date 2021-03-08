@@ -1,0 +1,61 @@
+GET http://localhost:3000/
+
+
+### 
+POST http://localhost:3000/
+Content-Type: application/json
+
+{
+    "id": "123",
+    "user": {
+        "role": "ADMIN"
+    }
+}
+
+### 
+POST http://localhost:3000/login
+content-type: application/json
+
+{
+    "user":{
+        "username": "ASB",
+        "password": "fgh",
+        "email": "gg@mail.com"
+    }
+}
+
+###
+GET http://localhost:3000/user
+content-type: application/json
+
+{
+    "user":{
+        "username": "ASdddB",
+        "password": "fgh",
+        "email": "gg@mail.com"
+    }
+}
+
+###
+GET http://localhost:3000/register
+content-type: application/json
+
+{
+    "user":{
+        "username": "ASdddB",
+        "password": "fgh",
+        "email": "gg@mail.com"
+    }
+}
+
+###
+POST http://localhost:3000/register
+content-type: application/json
+
+{
+    "user":{
+        "username": "ASdddB",
+        "password": "fgh",
+        "email": "gg@mail.com"
+    }
+}
