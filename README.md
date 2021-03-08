@@ -52,5 +52,5 @@ Now You can run the server and see it on localhost:3000
 npm run devStart
 ```
 
-[Demo]("./demo.PNG")
+[Demo]("https://github.com/fatsoap/Simple-User-Login-Web/blob/master/demo.PNG")
 
