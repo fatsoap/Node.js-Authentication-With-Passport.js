@@ -1,19 +1,19 @@
 # Simple User Login Web
 
 ## Using 
-- Passport.js
+#### Passport.js
 > for user authenticate
-- MongoDB
+#### MongoDB
 > NoSQL database to store user
-- Connect-Flash
+#### Connect-Flash
 > flash validate error & warning
-- Bcrypt.js
+#### Bcrypt.js
 > use bcrypt to hash password and save to db
-- View Engine : EJS
+#### View Engine : EJS
 > frontend render
-- Bootstrap.css
+#### Bootstrap.css
 > simple frontend css style
-- Unsplash
+#### Unsplash
 > free images source
 
 
@@ -49,7 +49,7 @@ node crypto_generator
 Now You can run the server and see it on localhost:3000
 
 ```
-npm run devStart
+npm start
 ```
 
 ![Demo](https://github.com/fatsoap/Simple-User-Login-Web/blob/master/demo.PNG)
