@@ -1,4 +1,8 @@
-# Simple User Login Web
+# Node.js - Simple User System with Passport.js
+
+## Demo
+
+![Demo](https://github.com/fatsoap/Simple-User-Login-Web/blob/master/demo.PNG)
 
 ## Using 
 #### Passport.js
@@ -52,5 +56,4 @@ Now You can run the server and see it on localhost:3000
 npm start
 ```
 
-![Demo](https://github.com/fatsoap/Simple-User-Login-Web/blob/master/demo.PNG)
 
